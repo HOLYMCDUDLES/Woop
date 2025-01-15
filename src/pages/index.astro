@@ -1,0 +1,77 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="DJ Portfolio">
+	<main>
+		<!-- Hero Section -->
+		<section id="home" class="min-h-screen flex items-center justify-center relative">
+			<div class="absolute inset-0 bg-gradient-to-b from-music-dark/50 to-music-dark z-10"></div>
+			<div class="container mx-auto px-4 relative z-20 text-center">
+				<h1 class="text-6xl md:text-8xl font-bold mb-6">
+					<span class="text-music-accent">DJ</span> Name
+				</h1>
+				<p class="text-xl md:text-2xl text-gray-300 mb-8">Music Producer & DJ</p>
+				<a href="#music" class="inline-block bg-music-accent px-8 py-3 rounded-full hover:bg-opacity-80 transition-all">
+					Listen Now
+				</a>
+			</div>
+		</section>
+
+		<!-- Music Section -->
+		<section id="music" class="py-20 bg-black/30">
+			<div class="container mx-auto px-4">
+				<h2 class="text-4xl font-bold mb-12 text-center">Latest Tracks</h2>
+				<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+					<!-- Add your music embed codes here -->
+					<div class="bg-music-dark p-4 rounded-lg">
+						<div class="aspect-video bg-gray-800 mb-4 rounded"></div>
+						<h3 class="text-xl font-bold mb-2">Track Title</h3>
+						<p class="text-gray-400">Release Date</p>
+					</div>
+					<!-- Repeat for more tracks -->
+				</div>
+			</div>
+		</section>
+
+		<!-- Shows Section -->
+		<section id="shows" class="py-20">
+			<div class="container mx-auto px-4">
+				<h2 class="text-4xl font-bold mb-12 text-center">Upcoming Shows</h2>
+				<div class="space-y-6">
+					<div class="bg-black/30 p-6 rounded-lg flex flex-col md:flex-row justify-between items-center">
+						<div>
+							<h3 class="text-xl font-bold">Event Name</h3>
+							<p class="text-gray-400">Venue • City</p>
+						</div>
+						<div class="mt-4 md:mt-0">
+							<span class="text-music-accent">Date</span>
+							<a href="#" class="ml-4 inline-block bg-music-accent px-6 py-2 rounded-full text-sm hover:bg-opacity-80 transition-all">
+								Tickets
+							</a>
+						</div>
+					</div>
+					<!-- Repeat for more shows -->
+				</div>
+			</div>
+		</section>
+
+		<!-- Contact Section -->
+		<section id="contact" class="py-20 bg-black/30">
+			<div class="container mx-auto px-4 text-center">
+				<h2 class="text-4xl font-bold mb-12">Get in Touch</h2>
+				<div class="max-w-2xl mx-auto">
+					<p class="text-xl mb-8">For bookings and inquiries:</p>
+					<a href="mailto:contact@example.com" class="text-music-accent text-2xl hover:underline">
+						contact@example.com
+					</a>
+					<div class="mt-12 flex justify-center space-x-8">
+						<a href="#" class="text-gray-400 hover:text-music-accent transition-colors">Instagram</a>
+						<a href="#" class="text-gray-400 hover:text-music-accent transition-colors">SoundCloud</a>
+						<a href="#" class="text-gray-400 hover:text-music-accent transition-colors">Spotify</a>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+</Layout>
